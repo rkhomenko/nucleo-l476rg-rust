@@ -1,9 +1,10 @@
 MEMORY
 {
-  /* NOTE 1 K = 1 KiBi = 1024 bytes */
-  /* TODO Adjust these memory regions to match your device memory layout */
-  /* These values correspond to the LM3S6965, one of the few devices QEMU can emulate */
-   FLASH (rx) : ORIGIN = 0x08003000, LENGTH = 1024K - 12K
+   FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 1024K
+
+   /* STM32L476RG has 128K embedded SRAM in two blocks
+   RAM2 (xrw) : ORIGIN = 0x10000000, LENGTH = 32K - with hardware parity check (SRAM2)
+   */
    RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 96K
 }
 
