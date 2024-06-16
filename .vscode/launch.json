@@ -23,7 +23,7 @@
                 "interface/stlink.cfg",
                 "target/stm32l4x.cfg"
             ],
-            "svdFile": "${workspaceRoot}/.vscode/STM32L476RG.svd",
+            "svdFile": "${workspaceRoot}/vscode/stm32l4x6.svd",
             "swoConfig": {
                 "enabled": true,
                 "cpuFrequency": 8000000,
